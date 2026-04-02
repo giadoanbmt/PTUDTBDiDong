@@ -3,7 +3,6 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 import CustomButton from '../components/CustomButton';
 
 export default function DetailScreen({ route, navigation }) {
-  // Nhận dữ liệu product được truyền từ HomeScreen
   const { product } = route.params;
 
   return (

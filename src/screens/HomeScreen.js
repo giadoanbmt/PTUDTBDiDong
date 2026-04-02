@@ -1,15 +1,13 @@
 import React from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
-import { PRODUCTS } from '../data';
+import { PRODUCTS } from '../data/mockData';
 import ProductCard from '../components/ProductCard';
 import AppHeader from '../components/AppHeader';
 
 export default function HomeScreen({ navigation }) {
-  // Hàm render từng mục trong FlatList
   const renderItem = ({ item }) => (
     <ProductCard 
       product={item} 
-      // Khi bấm Details, điều hướng sang màn hình DetailScreen và truyền theo dữ liệu item
       onDetailsPress={() => navigation.navigate('DetailScreen', { product: item })} 
     />
   );

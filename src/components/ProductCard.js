@@ -9,8 +9,8 @@ export default function ProductCard({ product, onDetailsPress }) {
       <View style={styles.infoContainer}>
         <Text style={styles.name}>{product.name}</Text>
         <Text style={styles.price}>{product.price}</Text>
-        {/* Nút Action gọi sự kiện truyền từ màn hình chính */}
-        <CustomButton title="Details" onPress={onDetailsPress} />
+        
+        <CustomButton title="Chi tiết sản phẩm" onPress={onDetailsPress} />
       </View>
     </View>
   );
@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginHorizontal: 10,
     marginBottom: 15,
-    elevation: 3, // Bóng đổ cho Android
-    shadowColor: '#000', // Bóng đổ cho iOS
+    elevation: 3, 
+    shadowColor: '#000', 
     shadowOpacity: 0.1,
     shadowRadius: 5,
     padding: 10,
