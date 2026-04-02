@@ -52,10 +52,11 @@ topic02/
 ├── package.json                # Chứa thông tin các thư viện đã cài đặt
 └── src/                        # Thư mục chứa toàn bộ mã nguồn chính
     ├── components/             # Chứa UI Component dùng chung
+    │   ├── AppHeader.js  
     │   ├── CustomButton.js     
     │   └── ProductCard.js      
     ├── data/                   # Thư mục chứa dữ liệu tĩnh
-    │   └── mockData.js         # Dữ liệu giả lập 10 sản phẩm
+    │   └── mockData.js         # Dữ liệu giả lập 6 sản phẩm
     ├── navigation/             # Chứa cấu hình luồng đi của ứng dụng
     │   └── AppNavigator.js     
     └── screens/                # Chứa các màn hình hiển thị
